@@ -3,7 +3,7 @@
 // URL del tuo server backend.
 // IMPORTANTE: Per il test locale, usiamo localhost sulla porta 8080.
 // Quando deployeremo su Google Cloud Run, DOVRA' essere aggiornato con l'URL finale del servizio.
-const API_URL = 'https://generateluck-oracle-345958704913.us-central1.run.app/generate-fortune';
+const API_URL = 'https://generateluck-oracle-824326930559.us-central1.run.app/generate-fortune';
 
 // Elementi del DOM
 const generateButton = document.getElementById('generate-button');
@@ -53,4 +53,5 @@ async function fetchFortune() {
 }
 
 // --- Listener Eventi ---
+
 generateButton.addEventListener('click', fetchFortune);
